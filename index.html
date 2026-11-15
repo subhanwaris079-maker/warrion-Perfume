@@ -103,7 +103,164 @@ footer{border-top:1px solid var(--line);background:#070707;padding:50px 0 30px;c
  .cats,.why,.revs{grid-template-columns:1fr 1fr}.sbox{display:none}.sbox.show{display:flex;position:fixed;top:78px;left:16px;right:16px;z-index:30}.sbox.show input{width:100%}
 }
 @media(max-width:560px){.cats,.why,.revs{grid-template-columns:1fr}.row{grid-template-columns:70px 1fr}.row>:last-child{grid-column:1/-1}.grid{grid-template-columns:1fr 1fr;gap:12px}.acts{flex-direction:column}.logo small{display:none}}
-</style></head><body>
+/* ===== WARRION PREMIUM REDESIGN ===== */
+
+:root {
+  --bg: #f7f5f0;
+  --bg2: #ffffff;
+  --card: #ffffff;
+  --gold: #b89555;
+  --gold2: #d6bd88;
+  --txt: #191919;
+  --mut: #77736c;
+  --line: #e8e1d5;
+}
+
+body {
+  background: var(--bg);
+  color: var(--txt);
+  font-family: 'Montserrat', sans-serif;
+}
+
+.wrap {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 24px;
+}
+
+header {
+  background: rgba(255,255,255,.96);
+  box-shadow: 0 4px 25px rgba(0,0,0,.04);
+}
+
+.bar {
+  padding: 20px 0;
+}
+
+.logo {
+  color: #191919;
+}
+
+.logo b, .gold {
+  color: var(--gold);
+}
+
+nav a {
+  color: #292929;
+  font-weight: 600;
+  transition: .3s;
+}
+
+nav a:hover {
+  color: var(--gold);
+}
+
+.hero {
+  background: linear-gradient(120deg,#191919,#30291f);
+  border-radius: 18px;
+  padding: 55px 35px;
+  color: #fff;
+  margin-top: 30px;
+  overflow: hidden;
+}
+
+.hero h1 {
+  color: #fff;
+  font-size: clamp(32px,5vw,58px);
+  line-height: 1.15;
+}
+
+.hero p {
+  color: #ded6c8;
+  line-height: 1.9;
+}
+
+.hero .art {
+  border-radius: 18px;
+}
+
+.cats, .why, .revs {
+  padding-top: 45px;
+  padding-bottom: 35px;
+}
+
+.cats .grid,
+.why .grid,
+.revs .grid {
+  gap: 22px;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #eee7dc;
+  border-radius: 16px;
+  padding: 22px;
+  box-shadow: 0 8px 25px rgba(0,0,0,.045);
+  transition: .3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 35px rgba(0,0,0,.09);
+  border-color: var(--gold);
+}
+
+button, .btn {
+  background: linear-gradient(135deg,#b89555,#dfc38d);
+  color: #17130c;
+  border: none;
+  border-radius: 8px;
+  padding: 13px 25px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: .3s;
+}
+
+button:hover, .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(184,149,85,.25);
+}
+
+input, select, textarea {
+  background: #fff;
+  border: 1px solid #ddd3c3;
+  border-radius: 8px;
+  padding: 12px;
+  color: #222;
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: 1px solid var(--gold);
+}
+
+footer {
+  background: #191919;
+  color: #eee;
+  padding: 45px 25px;
+}
+
+footer a {
+  color: var(--gold2);
+}
+
+@media(max-width:768px) {
+  .wrap {
+    padding: 0 15px;
+  }
+
+  .hero {
+    padding: 35px 20px;
+    margin-top: 15px;
+  }
+
+  .hero h1 {
+    font-size: 34px;
+  }
+
+  .card {
+    padding: 16px;
+  }
+}</style></head><body>
 <header><div class="wrap bar">
  <a href="#home" class="logo" aria-label="Warrion home">
   <svg width="42" height="42" viewBox="0 0 48 48"><defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#b8902a"/><stop offset=".5" stop-color="#f1d88a"/><stop offset="1" stop-color="#b8902a"/></linearGradient></defs><path d="M24 2 44 14v20L24 46 4 34V14z" fill="#0a0a0a" stroke="url(#lg)" stroke-width="2"/><path d="M12 17l5 15 7-11 7 11 5-15" fill="none" stroke="url(#lg)" stroke-width="2.4" stroke-linejoin="round"/><circle cx="24" cy="10" r="1.8" fill="url(#lg)"/></svg>
